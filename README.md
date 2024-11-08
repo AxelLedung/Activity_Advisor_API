@@ -31,7 +31,8 @@ This is a simple Python API using Flask designed to Advise Activities. It provid
    ```
    Powershell
    ```powershell
-   .\QOL_scripts\setup.ps1
+   cd .\QOL_scripts
+   ./setup.ps1
    ```
 
 ### API Endpoints
