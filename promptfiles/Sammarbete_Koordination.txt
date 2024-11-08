@@ -1,0 +1,10 @@
+{"introduction": "En avdelning kan förbättra samarbete genom att utveckla koordination och effektivisera arbetsprocesser.", 
+"conclusion": "", 
+"activities": [
+    {"title": "Planläggningssession", 
+     "description": "Håll en planläggningssession där alla anställda deltar. Under sessionen ska ni identifiera och prioritera uppgifter, definiera ansvar och skapa en gemensam vision för avdelningen."},
+    {"title": "Kommunikationsstrategi", 
+     "description": "Utveckla en kommunikationsstrategi som innebär att alla anställda är informerade om varandra och projektets status. Detta kan ske genom regelbundna möten, mejl eller andra digitala verktyg."},
+    {"title": "Tidsplanering", 
+     "description": "Utveckla en tidsplanering som hjälper till att prioritera uppgifter och minimera konflikter. Detta kan ske genom att alla anställda deltar i planläggningssessioner eller använder digitala verktyg för tidsplanering."}
+]}

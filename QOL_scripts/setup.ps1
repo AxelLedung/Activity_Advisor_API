@@ -8,4 +8,12 @@ if (!(Test-Path -Path "venv")) {
 
 Write-Output "Virtual environment 'venv' is now activated."
 
+pip install -r requirements.txt
+
+Set-Location ./QOL_scripts
+python setup.py
+
+Write-Host "Press any key to exit..."
+$x = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
 exit

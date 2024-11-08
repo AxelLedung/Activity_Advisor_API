@@ -1,1 +1,0 @@
-Insert Meta-Llama-3-8B-Instruct.Q4_0.gguf in this directory!

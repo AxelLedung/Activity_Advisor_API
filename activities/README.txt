@@ -1,0 +1,1 @@
+Started and completed activities are stored in this folder.

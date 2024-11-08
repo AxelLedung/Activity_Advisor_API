@@ -1,0 +1,1 @@
+Prompts are stored here for quicker responses.
