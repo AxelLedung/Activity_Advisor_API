@@ -6,13 +6,12 @@ This is a simple Python API using Flask designed to Advise Activities. It provid
 
 ## Features
 
-- **Localization**: Supports multi-language responses using `.resx` files.
-- **Logging**: Integrated logging for Error Management.
-- **Swagger Documentation**: Auto-generated API documentation using Swagger (Swashbuckle).
+- **Activity suggestions**: Suggest activities depending on which index area and index question that need action.
 
 ## Technologies Used
 
 - Python 3.12
+- GPT4All
 - Meta-Llama-3-8B-Instruct
 - Flask
 
@@ -21,7 +20,6 @@ This is a simple Python API using Flask designed to Advise Activities. It provid
 ### Prerequisites
 
 - Python 3.12
-- Meta-Llama-3-8B-Instruct
 
 ### Setup
 
@@ -35,14 +33,13 @@ This is a simple Python API using Flask designed to Advise Activities. It provid
 Below is a list of available API endpoints with their descriptions:
 
 ### Descriptions
-- **POST** `/api/describe-graph/{jsonString}&{graphType}&{breakdownCode}&{timeCode}&{lang}` - Retrieves a description for the graph data.
+- **POST** `/activity_advice?index_area=Effektivitet&index_question=Beslutsprocessen` - Retrieves a json-string with activity description for resolving issues with "Effektivitet" and "Beslutsprocessen".
 
 ### File Breakdown
 
-1. **`appsettings.json`** - Contains configuration settings like connection strings and logging levels.
-2. **`Program.cs`** - Entry point for the API. Configures services, middleware, and application settings.
-4. **`/Controllers`** - Holds API controllers managing different resources (e.g., `GraphController`).
-5. **`/Models`** - Contains data models used throughout the API (e.g., `Graph`, `GraphData`, `DescriptionData`).
-6. **`/Services`** - Houses service classes responsible for logic and data manipulation.
-7. **`/Resources`** - Stores localization files for supporting multiple languages (`.resx` files).
-8. **`/Logs`** -- Logs the errors per date error occured.
+1. **`main.py`** -  Entry point for the API.
+2. **`suggest_activity.py`** - Uses the model to create prompt and convert the prompt into json structure for response.
+4. **`/models`** - Used to store the model when downloaded via setup.ps1.
+5. **`/promptfiles`** - Contains generated prompts for quicker loading.
+6. **`/QOL_scripts`** - Contains scripts to setup dependencies, enviroment and models, and run the program using devmode and prodmode.
+7. **`/activities`** - Stores started and completed activities for future suggestions (`.json` files).
