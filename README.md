@@ -1,4 +1,4 @@
-# Activity Advisor API - Quicksearch AB
+# Activity Advisor API - LIA
 
 ## Overview
 
