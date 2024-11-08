@@ -27,6 +27,12 @@ This is a simple Python API using Flask designed to Advise Activities. It provid
 
    ```bash
    git clone https://github.com/AxelLedung/Activity_Advisor_API.git
+   ```
+   
+   ```powershell
+   cd /QOL_scripts/
+   ./setup.ps1
+   ```
 
 ### API Endpoints
 
